@@ -7,13 +7,13 @@ USE `DemoRegistration` ;
 --  'pma'@localhost;
 
 CREATE TABLE IF NOT EXISTS `DemoRegistration`.`STUDENTS` (
-  `UMID` INT UNSIGNED NOT NULL,
+  `UMID` INT(8) UNSIGNED NOT NULL,
   `FName` VARCHAR(15) NOT NULL,
   `LName` VARCHAR(15) NOT NULL,
   `Project_Title` VARCHAR(45) NOT NULL,
-  `Email_Address` INT UNSIGNED NOT NULL,
+  `Email_Address` VARCHAR(45) NOT NULL,
   `Phone_Number` INT NOT NULL,
-  `Time_Slot` INT NOT NULL,
+  `Time_Slot` INT NULL,
   PRIMARY KEY (`UMID`)
 )
   COMMENT='LIST OF REGISTERED STUDENTS'
