@@ -22,6 +22,9 @@
     $statement2->execute();
     $time_slots = $statement2->fetchAll();
     $statement2->closeCursor();
+
+    session_start();
+    $_SESSION['UMID'] = $umid;
 ?>
 
 <!DOCTYPE html>
@@ -90,4 +93,45 @@
     document.getElementById("fifth-slot").innerHTML = "12/10/2021 | 7pm-8pm | "+((6-adjustedInstance[4]) || 6)+" seats left<button id='fifth'>JOIN</button>"
     document.getElementById("sixth-slot").innerHTML = "12/10/2021 | 8pm-9pm | "+((6-adjustedInstance[5]) || 6)+" seats left<button id='sixth'>JOIN</button>"
 
+    document.addEventListener("DOMContentLoaded", () => {
+        var slot = 0;
+        var join1 = document.querySelector("#first");
+        var join2 = document.querySelector("#second");
+        var join3 = document.querySelector("#third");
+        var join4 = document.querySelector("#fourth");
+        var join5 = document.querySelector("#fifth");
+        var join6 = document.querySelector("#sixth");
+
+        join1.addEventListener("click", () => {
+            slot = (adjustedInstance[0] || 0) + 1;
+            location.href = "list.php";
+            window.location.href="list.php?uid="+slot;
+        });
+        join2.addEventListener("click", () => {
+            slot = (adjustedInstance[1] || 0) + 7;
+            location.href = "list.php";
+            window.location.href="list.php?uid="+slot;
+        });
+        join3.addEventListener("click", () => {
+            slot = (adjustedInstance[2] || 0) + 13
+            location.href = "list.php";
+            window.location.href="list.php?uid="+slot;
+        });
+        join4.addEventListener("click", () => {
+            slot = (adjustedInstance[3] || 0) + 19
+            location.href = "list.php";
+            window.location.href="list.php?uid="+slot;
+        });
+        join5.addEventListener("click", () => {
+            slot = (adjustedInstance[4] || 0) + 25
+            location.href = "list.php";
+            window.location.href="list.php?uid="+slot;
+        });
+        join6.addEventListener("click", () => {
+            slot = (adjustedInstance[5] || 0) + 31
+            location.href = "list.php";
+            window.location.href="list.php?uid="+slot;
+        });
+    });
+    
 </script>
