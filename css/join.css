@@ -51,5 +51,10 @@
 
 #box #title{
     font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#box #disclaimer{
     margin-bottom: 50px;
+    color: red;
 }

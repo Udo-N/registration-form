@@ -130,7 +130,7 @@
                         </ul> 
                     </p>
 
-                    <a href="join-page.html">Back</a> 
+                    <a href="index.html">Back to main page</a> 
                 </div>                               
             </div>
         </div>
@@ -155,26 +155,26 @@
     var sixthSection = document.getElementById('sixth-slot-list');
 
     for (var i = 0; i < section1Objects.length; i++){
-        firstSection.innerHTML += "<li>" + section1Objects[i].UMID + " | " + section1Objects[i].Fname + " | " + section1Objects[i].Lname + " | " + section1Objects[i].Phone_Number + " | " + section1Objects[i].Project_Title + " | " + section1Objects[i].Email_Address + " </li> "
+        firstSection.innerHTML += "<li>" + section1Objects[i].UMID + " | " + section1Objects[i].Fname + " " + section1Objects[i].Lname + " | " + section1Objects[i].Phone_Number + " | " + section1Objects[i].Project_Title + " | " + section1Objects[i].Email_Address + " </li> "
     }
 
     for (var i = 0; i < section2Objects.length; i++){
-        secondSection.innerHTML += "<li>" + section2Objects[i].UMID + " | " + section2Objects[i].Fname + " | " + section2Objects[i].Lname + " | " + section2Objects[i].Phone_Number + " | " + section2Objects[i].Project_Title + " | " + section2Objects[i].Email_Address + " </li> "
+        secondSection.innerHTML += "<li>" + section2Objects[i].UMID + " | " + section2Objects[i].Fname + " " + section2Objects[i].Lname + " | " + section2Objects[i].Phone_Number + " | " + section2Objects[i].Project_Title + " | " + section2Objects[i].Email_Address + " </li> "
     }
 
     for (var i = 0; i < section3Objects.length; i++){
-        thirdSection.innerHTML += "<li>" + section3Objects[i].UMID + " | " + section3Objects[i].Fname + " | " + section3Objects[i].Lname + " | " + section3Objects[i].Phone_Number + " | " + section3Objects[i].Project_Title + " | " + section3Objects[i].Email_Address + " </li> "
+        thirdSection.innerHTML += "<li>" + section3Objects[i].UMID + " | " + section3Objects[i].Fname + " " + section3Objects[i].Lname + " | " + section3Objects[i].Phone_Number + " | " + section3Objects[i].Project_Title + " | " + section3Objects[i].Email_Address + " </li> "
     }
 
     for (var i = 0; i < section4Objects.length; i++){
-        fourthSection.innerHTML += "<li>" + section4Objects[i].UMID + " | " + section4Objects[i].Fname + " | " + section4Objects[i].Lname + " | " + section4Objects[i].Phone_Number + " | " + section4Objects[i].Project_Title + " | " + section4Objects[i].Email_Address + " </li> "
+        fourthSection.innerHTML += "<li>" + section4Objects[i].UMID + " | " + section4Objects[i].Fname + " " + section4Objects[i].Lname + " | " + section4Objects[i].Phone_Number + " | " + section4Objects[i].Project_Title + " | " + section4Objects[i].Email_Address + " </li> "
     }
 
     for (var i = 0; i < section5Objects.length; i++){
-        fifthSection.innerHTML += "<li>" + section5Objects[i].UMID + " | " + section5Objects[i].Fname + " | " + section5Objects[i].Lname + " | " + section5Objects[i].Phone_Number + " | " + section5Objects[i].Project_Title + " | " + section5Objects[i].Email_Address + " </li> "
+        fifthSection.innerHTML += "<li>" + section5Objects[i].UMID + " | " + section5Objects[i].Fname + " " + section5Objects[i].Lname + " | " + section5Objects[i].Phone_Number + " | " + section5Objects[i].Project_Title + " | " + section5Objects[i].Email_Address + " </li> "
     }
 
     for (var i = 0; i < section6Objects.length; i++){
-        sixthSection.innerHTML += "<li>" + section6Objects[i].UMID + " | " + section6Objects[i].Fname + " | " + section6Objects[i].Lname + " | " + section6Objects[i].Phone_Number + " | " + section6Objects[i].Project_Title + " | " + section6Objects[i].Email_Address + " </li> "
+        sixthSection.innerHTML += "<li>" + section6Objects[i].UMID + " | " + section6Objects[i].Fname + " " + section6Objects[i].Lname + " | " + section6Objects[i].Phone_Number + " | " + section6Objects[i].Project_Title + " | " + section6Objects[i].Email_Address + " </li> "
     }
 </script>
