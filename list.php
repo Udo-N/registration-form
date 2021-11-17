@@ -1,7 +1,7 @@
 <?php
     $dsn = 'mysql:host=localhost; dbname=demoregistration';
-    $username = 'pma';
-    $password = 'W0lver1ne';
+    $username = ; // Insert username
+    $password = ; // Insert password
 
     $db = new PDO($dsn, $username, $password);
 
